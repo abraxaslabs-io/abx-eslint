@@ -2,13 +2,13 @@ const baseRules = {
   // Syntax-related rules that are enabled should (generally) be errors.
   // Semantics-related rules that are enabled should (generally) be warnings.
   // Disabled because we know better
-  "for-direction": 0,
+  "for-direction": "off",
 
   // Disabled because we know better
-  "getter-return": 0,
+  "getter-return": "off",
 
   // Disabled because we know better
-  "no-await-in-loop": 0,
+  "no-await-in-loop": "off",
 
   // Error because there is no reason to use -0
   "no-compare-neg-zero": "error",
@@ -18,13 +18,13 @@ const baseRules = {
   "no-cond-assign": "warn",
 
   // Disabled because we know better
-  "no-console": 0,
+  "no-console": "off",
 
   // Disabled because we know better
-  "no-constant-condition": 0,
+  "no-constant-condition": "off",
 
   // Disabled because we know better and we do too much with control characters
-  "no-control-regex": 0,
+  "no-control-regex": "off",
 
   // Error because it's always an artifact of debugging
   "no-debugger": "error",
@@ -46,23 +46,23 @@ const baseRules = {
   "no-empty-character-class": "error",
 
   // Disabled because we know better
-  "no-ex-assign": 0,
+  "no-ex-assign": "off",
 
   // Disabled because we know better and being explicit never hurt anybody
-  "no-extra-boolean-cast": 0,
+  "no-extra-boolean-cast": "off",
 
   // Disabled because we know better and eslint isn't granule enough otherwise
-  "no-extra-parens": 0,
+  "no-extra-parens": "off",
 
   // Disabled because typescript
   // ;(someVar as someType).someProperty is not uncommon
-  "no-extra-semi": 0,
+  "no-extra-semi": "off",
 
   // Disabled because we know better
-  "no-func-assign": 0,
+  "no-func-assign": "off",
 
   // Disabled because we know better
-  "no-inner-declarations": 0,
+  "no-inner-declarations": "off",
 
   // Warn because this might save us some debugging and is otherwise
   // very rare
@@ -83,7 +83,7 @@ const baseRules = {
   "no-obj-calls": "warn",
 
   // Disabled because we know better
-  "no-prototype-builtins": 0,
+  "no-prototype-builtins": "off",
 
   // Warn, because we probably know better but nobody is perfect
   "no-regex-spaces": "warn",
@@ -115,46 +115,46 @@ const baseRules = {
   "use-isnan": "error",
 
   // Disabled because there just isn't enough time in the day
-  "valid-jsdoc": 0,
+  "valid-jsdoc": "off",
 
   // Error because this is (almost) always an error
   "valid-typeof": "error",
 
   // Disabled because we know better
-  "accessor-pairs": 0,
+  "accessor-pairs": "off",
 
   // Disabled because we know better
-  "array-callback-return": 0,
+  "array-callback-return": "off",
 
   // Error because we shouldn't be using var at all anyway
   "block-scoped-var": "error",
 
   // Disabled because we know better
-  "class-methods-use-this": 0,
+  "class-methods-use-this": "off",
 
   // Disabled because we know better, and sometimes we write interesting
   // code that doesn't conform to society's standards of 'beautiful', also
   // don't @ me I'm 14 I can do what I want
-  complexity: 0,
+  complexity: "off",
 
   // Disabled because we know better
-  "consistent-return": 0,
+  "consistent-return": "off",
 
   // Error because consistent block format is important for readability;
   // see also 'cognitive strain'
   curly: ["error", "all"],
 
   // Disabled because we know better
-  "default-case": 0,
+  "default-case": "off",
 
   // Disabled because it's handled by TS rules below
-  "default-param-last": 0,
+  "default-param-last": "off",
 
   // Error because consistency matters
   "dot-location": ["error", "property"],
 
   // Disabled because it's handled by TS rules below
-  "dot-notingSession": 0,
+  "dot-notingSession": "off",
 
   // Error because there's rarely a situation where == is better than ===
   eqeqeq: ["error", "smart"],
@@ -174,17 +174,17 @@ const baseRules = {
   "no-case-declarations": "error",
 
   // Disabled because we know better
-  "no-div-regex": 0,
+  "no-div-regex": "off",
 
   // Warn, because the bike shed has been built and rebuilt and turned into
   // a michelin star restaurant at this point
   "no-else-return": "warn",
 
   // Disabled because we know better
-  "no-empty-function": 0,
+  "no-empty-function": "off",
 
   // Disabled because we know better
-  "no-empty-pattern": 0,
+  "no-empty-pattern": "off",
 
   // Warn because there are some convenience use-cases for it but
   // there's also a high chance it's a mistake as well. Use eslint-disable-line
@@ -199,49 +199,49 @@ const baseRules = {
   "no-extend-native": "warn",
 
   // Disabled because we know better
-  "no-extra-bind": 0,
+  "no-extra-bind": "off",
 
   // Warn, because this is most commonly the result of debugging and forgetting (although
   // overall it's pretty rare)
   "no-extra-label": "warn",
 
   // Disabled because we know better - yes, really. We do. We absolutely do.
-  "no-fallthrough": 0,
+  "no-fallthrough": "off",
 
   // Error because it's super confusing otherwise
   "no-floating-decimal": "error",
 
   // Disabled because we know better
-  "no-global-assign": 0,
+  "no-global-assign": "off",
 
   // Error because this causes so much cognitive strain when trying to visually parse code
   // Also, nobody likes a lazy developer
   "no-implicit-coercion": "error",
 
   // Disabled because we know better
-  "no-implicit-globals": 0,
+  "no-implicit-globals": "off",
 
   // Disabled because we know better
-  "no-implied-eval": 0,
+  "no-implied-eval": "off",
 
   // Disabled because we probably know better and ideally have tests
-  "no-invalid-this": 0,
+  "no-invalid-this": "off",
 
   // Disabled because what even is that? We probably know better
-  "no-iterator": 0,
+  "no-iterator": "off",
 
   // Disabled because we know better
-  "no-labels": 0,
+  "no-labels": "off",
 
   // Disabled because we know better and also "lone blocks" come in handy
   // occasionally when trying to keep block scope clean
-  "no-lone-blocks": 0,
+  "no-lone-blocks": "off",
 
   // Disabled because we know better and this rule rarely ever works correctly
-  "no-loop-func": 0,
+  "no-loop-func": "off",
 
   // Disabled because over-engineering is super annoying and we absolutely know better
-  "no-magic-numbers": 0,
+  "no-magic-numbers": "off",
 
   // Error because we should be strict about whitespace - also, this is --fix'able
   "no-multi-spaces": ["error", { ignoreEOLComments: true }],
@@ -250,14 +250,14 @@ const baseRules = {
   "no-multi-str": "error",
 
   // Disabled because we know better
-  "no-new": 0,
+  "no-new": "off",
 
   // Warn because we never do this and also this looks weird, but I don't trust
   // the logic in this rule enough to be correct
   "no-new-func": "warn",
 
   // Disabled because we know better and will call out anyone that uses this in PRs
-  "no-new-wrappers": 0,
+  "no-new-wrappers": "off",
 
   // Error because it's deprecated and also octals suck
   "no-octal": "error",
@@ -266,27 +266,27 @@ const baseRules = {
   "no-octal-escape": "error",
 
   // Disabled because we know better
-  "no-param-reassign": 0,
+  "no-param-reassign": "off",
 
   // Disabled because it's not common enough that we see this, and in the event we /do/ use it
   // we almost certainly know better
-  "no-proto": 0,
+  "no-proto": "off",
 
   // Disabled because it's handled by TS rules below
-  "no-redeclare": 0,
+  "no-redeclare": "off",
 
   // Disabled because this is just way too picky and you're only
   // going to slow yourself down with rules like this
-  "no-restricted-properties": 0,
+  "no-restricted-properties": "off",
 
   // Disabled because we know better
-  "no-return-assign": 0,
+  "no-return-assign": "off",
 
   // Disabled because it's handled by TS rules below
-  "no-return-await": 0,
+  "no-return-await": "off",
 
   // Disabled because we know better
-  "no-script-url": 0,
+  "no-script-url": "off",
 
   // Error because this is never a reason to do this
   "no-self-assign": "error",
@@ -299,10 +299,10 @@ const baseRules = {
   "no-sequences": "error",
 
   // Disabled because it's handled by TS rules below
-  "no-throw-literal": 0,
+  "no-throw-literal": "off",
 
   // Disabled because we know better and should have tests
-  "no-unmodified-loop-condition": 0,
+  "no-unmodified-loop-condition": "off",
 
   "no-unused-expressions": "error",
 
@@ -310,30 +310,30 @@ const baseRules = {
   "no-unused-labels": "error",
 
   // Disabled because we know better
-  "no-useless-call": 0,
+  "no-useless-call": "off",
 
   // Disabled because we know better
-  "no-useless-concat": 0,
+  "no-useless-concat": "off",
 
   // Disabled because we know better and sometimes we're being explicit
-  "no-useless-escape": 0,
+  "no-useless-escape": "off",
 
   // Disabled because these are generally caught in PR and other times we're
   // being explicit - this is just too subjective to have a linter care about
-  "no-useless-return": 0,
+  "no-useless-return": "off",
 
   // Disabled becuase we know better
-  "no-void": 0,
+  "no-void": "off",
 
   // Disabled because stop thought-policing me
-  "no-warning-comments": 0,
+  "no-warning-comments": "off",
 
   // Error because it's not 1999
   "no-with": "error",
 
   // Disabled because we probably know better and I don't trust this rule
   // to be smart enough
-  "prefer-promise-reject-errors": 0,
+  "prefer-promise-reject-errors": "off",
 
   // Breaking the semantics rule becuase the default behavior of parseInt()
   // can parse hexadecimal characters if you're not careful, and a lot of
@@ -342,10 +342,10 @@ const baseRules = {
   radix: "error",
 
   // Disabled because we absolutely know better and this is a silly assertion anyway
-  "require-await": 0,
+  "require-await": "off",
 
   // Disabled because 1) we aren't using vars, and 2) this isn't C89
-  "vars-on-top": 0,
+  "vars-on-top": "off",
 
   // Error becuase consistency is good and readability is better
   "wrap-iife": ["error", "inside"],
@@ -368,7 +368,7 @@ const baseRules = {
   strict: ["error", "never"],
 
   // Disabled because we know better
-  "init-declarations": 0,
+  "init-declarations": "off",
 
   // Breaking the semantics rule because we should never be doing this
   "no-delete-var": "error",
@@ -378,10 +378,10 @@ const baseRules = {
   "no-label-var": "error",
 
   // Disabled because we're not that opinionated
-  "no-restricted-globals": 0,
+  "no-restricted-globals": "off",
 
   // Disabled because it's handled by TS rules below
-  "no-shadow": 0,
+  "no-shadow": "off",
 
   // Error because how in the world is this even legal syntax?!
   "no-shadow-restricted-names": "error",
@@ -390,29 +390,29 @@ const baseRules = {
   "no-undef": "error",
 
   // Disabled because we know better and sometimes we're trying to be explicit
-  "no-undef-init": 0,
+  "no-undef-init": "off",
 
   // Disabled because we know better
-  "no-undefined": 0,
+  "no-undefined": "off",
 
   // Disabled because it's handled by TS rules below
-  "no-unused-vars": 0,
+  "no-unused-vars": "error",
 
   // Disabled because webpack is smart enough and it's common to place
   // utility functions at the bottom of the file
-  "no-use-before-define": 0,
+  "no-use-before-define": "off",
 
   // Disabled because we know better
-  "callback-return": 0,
+  "callback-return": "off",
 
   // Disabled because we know better
-  "global-require": 0,
+  "global-require": "off",
 
   // Disabled because we know better
-  "handle-callback-err": 0,
+  "handle-callback-err": "off",
 
   // Disabled because we know better
-  "no-buffer-constructor": 0,
+  "no-buffer-constructor": "off",
 
   // Error because consistency matters
   "no-mixed-requires": "error",
@@ -424,16 +424,16 @@ const baseRules = {
   "no-path-concat": "warn",
 
   // Disabled because what, why?
-  "no-process-env": 0,
+  "no-process-env": "off",
 
   // Error because we're not writing CLI apps here
   "no-process-exit": "error",
 
   // Disabled because we're not that opinionated
-  "no-restricted-modules": 0,
+  "no-restricted-modules": "off",
 
   // Disabled because we know better and sometimes sync is faster than async
-  "no-sync": 0,
+  "no-sync": "off",
 
   // Error because consistency and readability matter
   "array-bracket-newline": ["error", "consistent"],
@@ -446,26 +446,26 @@ const baseRules = {
   ],
 
   // Disabled because we have already specified how we want arrays to be formatted
-  "array-element-newline": 0,
+  "array-element-newline": "off",
 
   // Error because consistency matters
   "block-spacing": ["error", "always"],
 
   // Disabled because it's handled by TS rules below
-  "brace-style": 0,
+  "brace-style": "off",
 
   // Don't warn because we know that we won't do this but typechain camelCases everything
   // and we don't want to add ignores everywhere
   camelcase: "warn",
 
   // Disabled because this is easily the most annoying linter rule on the planet
-  "capitalized-comments": 0,
+  "capitalized-comments": "off",
 
   // Disabled because it's handled by TS rules below
-  "comma-dangle": 0,
+  "comma-dangle": "off",
 
   // Disabled because it's handled by TS rules below
-  "comma-spacing": 0,
+  "comma-spacing": "off",
 
   // Error because consistency matters, and arguably readability (plus nobody uses comma-first so it appears
   // quite foreign if you're not used to it)
@@ -485,7 +485,7 @@ const baseRules = {
   "eol-last": ["error", "always"],
 
   // Disabled because it's handled by TS rules below
-  "func-call-spacing": 0,
+  "func-call-spacing": "off",
 
   // Warn because it's generally a good idea but sometimes we know better
   "func-name-matching": ["warn", "always"],
@@ -494,22 +494,22 @@ const baseRules = {
   "func-names": ["warn", "as-needed"],
 
   // Disabled because we know better and check these things in PRs
-  "func-style": 0,
+  "func-style": "off",
 
   // Disabled because Prettier handles consistency and we know better otherwise
-  "function-paren-newline": 0,
+  "function-paren-newline": "off",
 
   // Disabled because we're not that opinionated
-  "id-blacklist": 0,
+  "id-blacklist": "off",
 
   // Disabled because we're not that opinionated
-  "id-length": 0,
+  "id-length": "off",
 
   // Disabled because we're not that opinionated
-  "id-match": 0,
+  "id-match": "off",
 
   // Disabled because it's handled by TS rules below
-  indent: 0,
+  indent: "off",
 
   // Error because consistency matters
   "jsx-quotes": ["error", "prefer-double"],
@@ -521,75 +521,75 @@ const baseRules = {
   ],
 
   // Disabled because it's handled by TS rules below
-  "keyword-spacing": 0,
+  "keyword-spacing": "off",
 
   // Disabled because we know better
-  "line-comment-position": 0,
+  "line-comment-position": "off",
 
   // Error because consistency matters
   "linebreak-style": ["error", "unix"],
 
   // Disabled because we know better
-  "lines-around-comment": 0,
+  "lines-around-comment": "off",
 
   // Disabled because it's handled by TS rules below
-  "lines-between-class-members": 0,
+  "lines-between-class-members": "off",
 
   // Disabled because we know better
-  "max-depth": 0,
+  "max-depth": "off",
 
   // Disabled because we know better and 80 characters is arbitrary
   // and was originally meant to match IBM punch cards and some
   // archaic dumb terminal widths. Thankfully, we've evolved as a species
   // to no longer require such ridiculous limitations, and trust you
   // not to abuse your newfound responsibility.
-  "max-len": 0,
+  "max-len": "off",
 
   // Disabled because what kind of limitation or metric is this?
-  "max-lines": 0,
+  "max-lines": "off",
 
   // Disabled because we know better and thanksfully async/await gets rid of
   // most callback hell.
   "max-nested-callbacks": 2,
 
   // Disabled because we know better
-  "max-params": 0,
+  "max-params": "off",
 
   // Disabled because we know better
-  "max-statements": 0,
+  "max-statements": "off",
 
   // Error and max 1, because you shouldn't be writing minified code to start with
   "max-statements-per-line": ["error", { max: 2 }],
 
   // Disabled because we know better and this rule isn't fine-grained enough to really
   // help with consistency or style
-  "multiline-comment-style": 0,
+  "multiline-comment-style": "off",
 
   // Disabled because Prettier ensures consistency here
-  "multiline-ternary": 0,
+  "multiline-ternary": "off",
 
   // Disable because we work with ppl who don't do this
-  "new-cap": 0,
+  "new-cap": "off",
 
   // Error because consistency and the reduction of cognitive strain matter
   "new-parens": "error",
 
   // Disabled because Prettier takes care of this
-  "newline-per-chained-call": 0,
+  "newline-per-chained-call": "off",
 
   // Disabled because we know better
-  "no-array-constructor": 0,
+  "no-array-constructor": "off",
 
   // Disabled because a linter shouldn't be disabling operators for which there is no alternative
-  "no-bitwise": 0,
+  "no-bitwise": "off",
 
   // Disabled because we know better
-  "no-inline-comments": 0,
+  "no-inline-comments": "off",
 
   // Error for consistency; yes, this rule is --fix'able
   "no-lonely-if": "error",
 
-  "no-mixed-operators": 0,
+  "no-mixed-operators": "off",
 
   // See `indent` rule - this is an error unless you're using tabs for indentation and spaces
   // for alignment, which we don't
@@ -602,10 +602,10 @@ const baseRules = {
   "no-multiple-empty-lines": "error",
 
   // Disabled because we know better
-  "no-negated-condition": 0,
+  "no-negated-condition": "off",
 
   // Disabled because we know better and you don't realize how annoying this rule is until you enable it
-  "no-nested-ternary": 0,
+  "no-nested-ternary": "off",
 
   // Warn because you shouldn't be doing this...
   "no-new-object": "warn",
@@ -615,44 +615,44 @@ const baseRules = {
   "no-plusplus": "off",
 
   // Disabled because we're not picky
-  "no-restricted-syntax": 0,
+  "no-restricted-syntax": "off",
 
   // Disabled because earlier rules should catch this and who knows what you're doing at this point
-  "no-tabs": 0,
+  "no-tabs": "off",
 
   // Disabled because we know better
-  "no-ternary": 0,
+  "no-ternary": "off",
 
   // Error; this is fixable and you really should be using editorconfig anyway
   "no-trailing-spaces": "error",
 
   // Disabled because we know better
-  "no-underscore-dangle": 0,
+  "no-underscore-dangle": "off",
 
   // Disabled because we know better
-  "no-unneeded-ternary": 0,
+  "no-unneeded-ternary": "off",
 
   // Error because readability and consistency count
   "no-whitespace-before-property": "error",
 
   // Disabled because we know better
-  "nonblock-statement-body-position": 0,
+  "nonblock-statement-body-position": "off",
 
   // Error because readability and consistency count
   "object-curly-newline": ["error", { multiline: true, consistent: true }],
 
   // Disabled because it's handled by TS rules below
-  "object-curly-spacing": 0,
+  "object-curly-spacing": "off",
 
   // Disabled because the rule isn't specific enough
-  "object-property-newline": 0,
+  "object-property-newline": "off",
 
   // Error because consistency and readability count,
   // and the old multi-decl syntax has long fallen by the wayside
   "one-var": ["error", "never"],
 
   // Disabled because it's irrelevant due to `one-var`
-  "one-var-declaration-per-line": 0,
+  "one-var-declaration-per-line": "off",
 
   // Error for consistency; this is indeed fixable
   "operator-assignment": ["error", "always"],
@@ -669,7 +669,7 @@ const baseRules = {
 
   // Disable because there is no requirement/restriction; the code should dictate
   // where padding lines are placed.
-  "padding-line-between-statements": 0,
+  "padding-line-between-statements": "off",
 
   // Warn as prisma uses "in" as a keyword and prettier removes quotes -.-
   "quote-props": [
@@ -679,13 +679,13 @@ const baseRules = {
   ],
 
   // Disabled because it's handled by TS rules below
-  quotes: 0,
+  quotes: "off",
 
   // Disable because there isn't enough time in the day
-  "require-jsdoc": 0,
+  "require-jsdoc": "off",
 
   // Disabled because it's handled by TS rules below
-  semi: 0,
+  semi: "off",
 
   // Error because this is fixable and helps consistency and readability
   "semi-spacing": ["error", { before: false, after: true }],
@@ -694,22 +694,22 @@ const baseRules = {
   "semi-style": ["error", "last"],
 
   // Disabled because there really, really isn't enough time in the day
-  "sort-keys": 0,
+  "sort-keys": "off",
 
   // Disabled because there really, really isn't enough time in the day
-  "sort-vars": 0,
+  "sort-vars": "off",
 
   // Error because consistency and readability matter
   "space-before-blocks": ["error", "always"],
 
   // Disabled because it's handled by TS rules below
-  "space-before-function-paren": 0,
+  "space-before-function-paren": "off",
 
   // Error because consistency matters
   "space-in-parens": ["error", "never"],
 
   // Disabled because it's handled by TS rules below
-  "space-infix-ops": 0,
+  "space-infix-ops": "off",
 
   // Error because readability and consistency matter
   "space-unary-ops": ["error", { words: true, nonwords: false }],
@@ -727,14 +727,14 @@ const baseRules = {
   "unicode-bom": ["error", "never"],
 
   // Disabled because we know better
-  "wrap-regex": 0,
+  "wrap-regex": "off",
 
   // DIsabled because generally while consistency matters, this rule
   // will often trigger while debugging and cause massive headaches
-  "arrow-body-style": 0,
+  "arrow-body-style": "off",
 
   // Disabled because Prettier takes care of this
-  "arrow-parens": 0,
+  "arrow-parens": "off",
 
   // Error becuase readability counts
   "arrow-spacing": ["error", { before: true, after: true }],
@@ -748,7 +748,7 @@ const baseRules = {
   "constructor-super": "error",
 
   // Error because consistency matters
-  "generator-star-spacing": 0,
+  "generator-star-spacing": "off",
 
   // Warn on modifying class identifiers, because you're probably not doing something right
   // but you may still know better
@@ -756,25 +756,25 @@ const baseRules = {
 
   // We leave that up to the developer, cause hooks sometimes return values
   // dependent on another one, and it's annoying to add a { return } all the time
-  "no-confusing-arrow": 0,
+  "no-confusing-arrow": "off",
 
   // Error since this will always result in a runtime error
   "no-const-assign": "error",
 
   // Disabled because it's handled by TS rules below
-  "no-dupe-class-members": 0,
+  "no-dupe-class-members": "off",
 
   // Disabled because it's handled by TS rules below
-  "no-duplicate-imports": 0,
+  "no-duplicate-imports": "off",
 
   // Disabled because we know better
-  "no-loss-of-precision": 0,
+  "no-loss-of-precision": "off",
 
   // Warn on new Symbol() since there's a chance you know better
   "no-new-symbol": "warn",
 
   // Disabled because we're not that opinionated
-  "no-restricted-imports": 0,
+  "no-restricted-imports": "off",
 
   // Error because this will never not (double negative) cause a reference error
   "no-this-before-super": "error",
@@ -792,19 +792,19 @@ const baseRules = {
   "no-var": "error",
 
   // Disabled because it's not fixable and super annoying
-  "object-shorthand": 0,
+  "object-shorthand": "off",
 
   // Disabled because we know better
-  "prefer-arrow-callback": 0,
+  "prefer-arrow-callback": "off",
 
   // Error because it's fixable and safer (thus justifying not being a warning)
   "prefer-const": ["error", { destructuring: "all" }],
 
   // Disabled because if you've ever written React code with this rule enabled you've definitely lost some hair
-  "prefer-destructuring": 0,
+  "prefer-destructuring": "off",
 
   // Disabled because we know better and there is a chance we're trying to be explicit
-  "prefer-numeric-literals": 0,
+  "prefer-numeric-literals": "off",
 
   // Warn because rest params are generally better, but sometimes we might know better
   "prefer-rest-params": "warn",
@@ -825,7 +825,7 @@ const baseRules = {
 
   // Disabled because the auto-fixer isn't smart enough to help with this rule, and it's
   // not important enough to be a warning or an error.
-  "sort-imports": 0,
+  "sort-imports": "off",
 
   // Warning because we should be providing Symbol descriptions but we might actually know better
   "symbol-description": "warn",
@@ -839,4 +839,4 @@ const baseRules = {
   "@typescript-eslint/no-unused-vars": ["warn"],
 }
 
-module.exports = baseRules
+export default baseRules;

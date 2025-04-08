@@ -292,4 +292,4 @@ const reactRules = {
   "react-hooks/exhaustive-deps": "error",
 }
 
-module.exports = reactRules
+export default reactRules;

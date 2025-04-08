@@ -1,4 +1,4 @@
-const { resolve } = require("node:path");
+import { resolve } from "node:path";
 
 const project = resolve(process.cwd(), "tsconfig.json");
 
@@ -8,32 +8,18 @@ const project = resolve(process.cwd(), "tsconfig.json");
  * that utilize React.
  */
 
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: ["eslint:recommended", "prettier", "eslint-config-turbo"],
-  plugins: [],
-  globals: {
-    React: true,
-    JSX: true,
-  },
-  env: {
-    browser: true,
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project,
+export default [
+  {
+    files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
+    languageOptions: {
+      parser: "@typescript-eslint/parser",
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: {
+        React: true,
+        JSX: true,
       },
     },
+    plugins: [],
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    ".*.js",
-    "node_modules/",
-    "dist/",
-  ],
-  overrides: [
-    // Force ESLint to detect .tsx files
-    { files: ["*.js?(x)", "*.ts?(x)"] },
-  ],
-}
+];

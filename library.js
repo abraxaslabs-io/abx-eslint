@@ -1,36 +1,28 @@
-const { resolve } = require("node:path");
-const baseRules = require("./base")
+import baseRules from './baseRules.js';
+import globals from 'globals';
+import js from '@eslint/js';
+import tseslint from 'typescript-eslint';
 
-const project = resolve(process.cwd(), "tsconfig.json")
+export default [
+  tseslint.configs.recommended,
+  {
+    files: ['**/*.{js,mjs,cjs,ts}'],
+    languageOptions: {
 
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  // eslint-disable-next-line quote-props
-  extends: ["eslint:recommended", "prettier", "turbo", "eslint-config-turbo"],
-  plugins: ["@typescript-eslint", "prettier"],
-  globals: {
-    BigInt: true,
+      globals: {
+        ...globals.node
+      }
+    }
   },
-  env: {
-    node: true,
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project,
+  {
+    files: ['**/*.{js,mjs,cjs,ts}'],
+    languageOptions: {
+      globals: {
+        BigInt: true,
       },
     },
+    plugins: { js },
+    extends: ['js/recommended'],
+    rules: baseRules,
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    ".*.js",
-    "node_modules/",
-    "dist/",
-  ],
-  overrides: [
-    {
-      files: ["*.js?(x)", "*.ts?(x)"],
-    },
-  ],
-  rules: baseRules,
-}
+];

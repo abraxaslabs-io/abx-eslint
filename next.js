@@ -1,41 +1,21 @@
-const baseRules = require("./base")
-const reactRules = require("./reactRules")
-
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  parser: "@typescript-eslint/parser",
-  extends: [
-    "next",
-    "turbo",
-    "./library.js",
-    "plugin:@tanstack/query/recommended",
-  ],
-  plugins: ["react"],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true,
-      impliedStrict: true,
-      experimentalObjectRestSpread: true,
+import baseRules from './baseRules';
+import reactRules from './reactRules';
+import globals from 'globals';
+export default [
+  {
+    files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+    languageOptions: {
+      globals: {
+        React: true,
+        JSX: true,
+        TailwindColor: true,
+        ...globals.browser,
+      },
+    },
+    plugins: ['react'],
+    rules: {
+      ...baseRules,
+      ...reactRules,
     },
   },
-  globals: {
-    React: true,
-    JSX: true,
-    TailwindColor: true,
-  },
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    node: true,
-    jest: true,
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
-  rules: Object.assign(baseRules, reactRules),
-}
+];
