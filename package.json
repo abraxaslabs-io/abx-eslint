@@ -17,7 +17,7 @@
     "baseRules.js",
     "reactRules.js"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@eslint/js": "^9.24.0",
     "@tanstack/eslint-plugin-query": "^5.62.1",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
@@ -30,7 +30,9 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.34.4",
     "globals": "^16.0.0",
-    "turbo": "^2.0.5",
+    "turbo": "^2.0.5"
+  },
+  "devDependencies": {
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.29.1"
   }
