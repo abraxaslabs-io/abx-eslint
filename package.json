@@ -6,7 +6,9 @@
   "exports": {
     "./library.js": "./library.js",
     "./next.js": "./next.js",
-    "./react-internal.js": "./react-internal.js"
+    "./react-internal.js": "./react-internal.js",
+    "./baseRules.js": "./baseRules.js",
+    "./reactRules.js": "./reactRules.js"
   },
   "files": [
     "library.js",
