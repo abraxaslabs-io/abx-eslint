@@ -1,6 +1,7 @@
-import baseRules from './baseRules';
-import reactRules from './reactRules';
-import globals from 'globals';
+import react from 'eslint-plugin-react'
+import baseRules from './baseRules.js'
+import reactRules from './reactRules.js'
+import globals from 'globals'
 export default [
   {
     files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
@@ -12,10 +13,10 @@ export default [
         ...globals.browser,
       },
     },
-    plugins: ['react'],
+    plugins: [react],
     rules: {
       ...baseRules,
       ...reactRules,
     },
   },
-];
+]
