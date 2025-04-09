@@ -8,14 +8,16 @@
     "./next.js": "./next.js",
     "./react-internal.js": "./react-internal.js",
     "./baseRules.js": "./baseRules.js",
-    "./reactRules.js": "./reactRules.js"
+    "./reactRules.js": "./reactRules.js",
+    "./prettier.config.js": "./prettier.config.js"
   },
   "files": [
     "library.js",
     "next.js",
     "react-internal.js",
     "baseRules.js",
-    "reactRules.js"
+    "reactRules.js",
+    "prettier.config.js"
   ],
   "dependencies": {
     "@eslint/js": "^9.24.0",
