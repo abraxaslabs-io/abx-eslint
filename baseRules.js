@@ -397,7 +397,7 @@ const baseRules = {
 
   // warn because it's nice to know we can remove stuff, but it shouldn't break get in the way
   'no-unused-vars': 'warn',
-  'typescript-eslint/no-unused-vars': ['warn'],
+  '@pt-eslint/no-unused-vars': ['warn'],
 
   // Disabled because webpack is smart enough and it's common to place
   // utility functions at the bottom of the file
@@ -838,7 +838,7 @@ const baseRules = {
   'yield-star-spacing': ['error', 'before'],
 
   // disable because we know better
-  'typescript-eslint/no-explicit-any': 'off',
+  '@typescript-eslint/no-explicit-any': 'off',
 }
 
 export default baseRules;

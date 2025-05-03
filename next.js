@@ -18,15 +18,6 @@ export default [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
-    languageOptions: {
-      globals: {
-        React: true,
-        JSX: true,
-        TailwindColor: true,
-        ...globals.browser,
-      },
-    },
-    plugins: [react],
     rules: {
       ...baseRules,
       ...reactRules,
