@@ -397,7 +397,13 @@ const baseRules = {
 
   // warn because it's nice to know we can remove stuff, but it shouldn't break get in the way
   'no-unused-vars': 'warn',
-  '@typescript-eslint/no-unused-vars': ['warn'],
+  '@typescript-eslint/no-unused-vars': ['warn', { // or 'error'
+      vars: 'all', // Check all variables
+      args: 'after-used', // Only check args after the last used arg
+      ignoreRestSiblings: true,
+      argsIgnorePattern: '^_', // <--- Ensure this is set (or similar)
+      varsIgnorePattern: '^_', // Optionally ignore vars starting with _ too
+    }],
 
   // Disabled because webpack is smart enough and it's common to place
   // utility functions at the bottom of the file

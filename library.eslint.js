@@ -1,18 +1,17 @@
-import baseRules from './baseRules.js';
-import globals from 'globals';
-import js from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import baseRules from './baseRules.eslint.js'
+import globals from 'globals'
+import js from '@eslint/js'
+import tseslint from 'typescript-eslint'
 
 export default [
   tseslint.configs.recommended,
   {
     files: ['**/*.{js,mjs,cjs,ts}'],
     languageOptions: {
-
       globals: {
-        ...globals.node
-      }
-    }
+        ...globals.node,
+      },
+    },
   },
   {
     files: ['**/*.{js,mjs,cjs,ts}'],
@@ -25,4 +24,4 @@ export default [
     extends: ['js/recommended'],
     rules: baseRules,
   },
-];
+]
