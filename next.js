@@ -14,6 +14,7 @@ const compat = new FlatCompat({
 })
 
 export default [
+  globalIgnores(['**/dist/', 'node_modules/']),
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
