@@ -17,6 +17,10 @@
     "react-internal.eslint.js",
     "baseRules.eslint.js",
     "reactRules.eslint.js",
+    "reactRules.tsconfig.js",
+    "react-library.tsconfig.json",
+    "nextjs.tsconfig.json",
+    "base.tsconfig.json",
     "prettier.config.js"
   ],
   "peerDependencies": {
