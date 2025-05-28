@@ -1,22 +1,22 @@
 {
   "name": "@abraxas/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "exports": {
-    "./library.js": "./library.js",
-    "./next.js": "./next.js",
-    "./react-internal.js": "./react-internal.js",
-    "./baseRules.js": "./baseRules.js",
-    "./reactRules.js": "./reactRules.js",
-    "./prettier.config.js": "./prettier.config.js"
+    "./library": "./library.eslint.js",
+    "./next": "./next.eslint.js",
+    "./react-internal": "./react-internal.eslint.js",
+    "./baseRules": "./baseRules.eslint.js",
+    "./reactRules": "./reactRules.eslint.js",
+    "./prettier.config": "./prettier.config.js"
   },
   "files": [
-    "library.js",
-    "next.js",
-    "react-internal.js",
-    "baseRules.js",
-    "reactRules.js",
+    "library.eslint.js",
+    "next.eslint.js",
+    "react-internal.eslint.js",
+    "baseRules.eslint.js",
+    "reactRules.eslint.js",
     "prettier.config.js"
   ],
   "peerDependencies": {
